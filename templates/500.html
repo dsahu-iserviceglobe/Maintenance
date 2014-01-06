@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}"
+      xml:lang="{% firstof LANGUAGE_CODE 'en' %}"
+      lang="{% firstof LANGUAGE_CODE 'en' %}">
+<head>
+    <meta charset="utf-8">
+    <title>MoGo CRM - Maintenance</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/static/css/less/bootstrap.less" type="text/less" rel="stylesheet" charset="utf-8">
+    <link href="/static/css/style.css" type="text/css" rel="stylesheet" />
+    <script src="/static/js/jquery.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        if ($('link[type="text/less"]').length) {
+            document.write(unescape("%3Cscript src='/static/js/less-1.1.5.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+</head>
+<body>
+    <div class="topbar">
+        <div class="fill">
+            <div class="containerb">
+                <ul class="nav mnav">
+                    <li>
+                    <img src="/static/images/mogo_logo.png" height="35px" class="logo" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="wrapper">
+	        <div class="errmessage">
+	        <h1><span class="error-text">Maintenance Under Progress.</span></h1> <br/>
+	        <p class="gray">Things will be back to normal soon.</p>
+	        </div>
+	      <address class="addr"><b>Mogo</b> <u>customer support team</u></address> 
+	        <footer>
+	            <p>&copy; mogocrm 2013</p>
+	        </footer>
+        </div>
+</body>
+</html>
+

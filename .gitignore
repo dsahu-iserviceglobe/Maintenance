@@ -1,0 +1,8 @@
+*.pyc
+.pydevproject
+.project
+.settings/
+.DS_Store
+*~
+/pip-log.txt
+db.sqlite3
