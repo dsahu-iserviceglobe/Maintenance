@@ -9,5 +9,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', TemplateView.as_view(template_name='500.html'), name='about'),
+    url(r'^$', TemplateView.as_view(template_name='500.html'), name='maintenance'),
 )
+handler400 = "TemplateView.as_view(template_name='500.html')"
+handler404 = "TemplateView.as_view(template_name='500.html')"

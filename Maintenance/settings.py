@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '#_9h)0@x@dfaqccfp9pm*hp8g#i$i+rer(!5t5@&hfg4v$apcp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
@@ -94,3 +94,9 @@ STATICFILES_FINDERS = (
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
 )
+ALLOWED_HOSTS={
+    'localhost',
+    '127.0.0.1',
+    'go.mogocrm.com',
+    'dev.mogocrm.com',
+}
